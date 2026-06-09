@@ -1,0 +1,664 @@
+/* ============================================
+   PREMIUM ENHANCEMENTS — IAM Dr. Christina Blake
+   Luxury Faith Legacy Design Refinement
+   ============================================ */
+
+/* ---- ENHANCED CSS VARIABLES ---- */
+:root {
+  --gold-rich: #C8A45A;
+  --shadow-gold: 0 8px 40px rgba(216,184,120,0.15);
+  --shadow-deep: 0 20px 60px rgba(0,0,0,0.5);
+  --border-gold-soft: 1px solid rgba(216,184,120,0.2);
+}
+
+/* ============================================
+   LOADER
+   ============================================ */
+#loader {
+  background: radial-gradient(ellipse at 50% 40%, #2B102E 0%, #1a091c 40%, #150d0b 100%) !important;
+}
+
+/* ============================================
+   NAV — MORE PREMIUM, ELEVATED
+   ============================================ */
+nav {
+  transition: all 0.5s ease !important;
+}
+nav.scrolled {
+  background: rgba(19, 10, 9, 0.97) !important;
+  box-shadow: 0 2px 40px rgba(0,0,0,0.7) !important;
+  border-bottom: 1px solid rgba(216,184,120,0.18) !important;
+}
+.nav-links a {
+  font-weight: 300;
+  letter-spacing: 0.42em;
+}
+.nav-logo img {
+  filter: drop-shadow(0 0 10px rgba(216,184,120,0.25));
+  transition: filter 0.4s ease;
+}
+.nav-logo:hover img {
+  filter: drop-shadow(0 0 22px rgba(216,184,120,0.55));
+}
+.mobile-nav {
+  background: rgba(14, 7, 6, 0.98) !important;
+  backdrop-filter: blur(24px);
+}
+.mobile-nav a {
+  letter-spacing: 0.18em;
+  text-shadow: 0 0 30px rgba(216,184,120,0.1);
+}
+
+/* ============================================
+   HERO — CINEMATIC OVERLAY REFINEMENT
+   ============================================ */
+.hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(26, 9, 28, 0.72) 0%,
+    rgba(34, 24, 23, 0.2) 38%,
+    rgba(34, 24, 23, 0.75) 75%,
+    rgba(20, 11, 8, 1) 100%
+  ) !important;
+}
+.hero-eyebrow {
+  letter-spacing: 0.72em;
+  text-shadow: 0 0 40px rgba(216,184,120,0.45);
+}
+.hero-title {
+  text-shadow: 0 4px 40px rgba(0,0,0,0.6);
+  line-height: 0.95 !important;
+}
+.hero-title em {
+  text-shadow: 0 0 40px rgba(216,184,120,0.3);
+}
+.hero-subtitle {
+  text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+  letter-spacing: 0.06em;
+}
+.btn-gold {
+  box-shadow: 0 4px 24px rgba(216,184,120,0.28);
+  letter-spacing: 0.42em !important;
+}
+.btn-gold:hover {
+  box-shadow: 0 8px 36px rgba(216,184,120,0.45) !important;
+}
+.btn-outline {
+  backdrop-filter: blur(4px);
+}
+.scroll-line {
+  background: linear-gradient(to bottom, var(--gold), transparent) !important;
+}
+
+/* ============================================
+   SECTION — SHARED REFINEMENTS
+   ============================================ */
+.section-label::before {
+  background: linear-gradient(to right, var(--gold), rgba(216,184,120,0.2)) !important;
+}
+.section-heading em {
+  text-shadow: 0 0 50px rgba(216,184,120,0.18);
+}
+.divider {
+  background: linear-gradient(to right, transparent, var(--gold), transparent) !important;
+  opacity: 0.7;
+}
+
+/* ============================================
+   ABOUT SECTION — Image (2): Book + Spotlight
+   ============================================ */
+#about {
+  position: relative;
+  background: linear-gradient(180deg, #1c0d1e 0%, #2B102E 50%, #1c0d1e 100%) !important;
+  overflow: hidden;
+}
+#about::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_39_56 PM (2).webp');
+  background-size: cover;
+  background-position: center 30%;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+#about .about-grid {
+  position: relative;
+  z-index: 1;
+}
+.about-img-frame::before {
+  border-color: rgba(216,184,120,0.35) !important;
+}
+.about-img-frame::after {
+  border-color: rgba(216,184,120,0.15) !important;
+}
+.about-badge {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5), 0 0 0 4px rgba(216,184,120,0.15);
+}
+.stat strong {
+  background: linear-gradient(135deg, #EDD49A 0%, #D8B878 60%, #C8A45A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.quote-block {
+  background: rgba(216,184,120,0.04) !important;
+  box-shadow: inset 0 0 40px rgba(216,184,120,0.03), 0 4px 30px rgba(0,0,0,0.2);
+}
+
+/* ============================================
+   MARQUEE BAND
+   ============================================ */
+.marquee-wrap {
+  background: linear-gradient(90deg, #C0963E 0%, #D8B878 40%, #E8CA8A 60%, #C0963E 100%) !important;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+
+/* ============================================
+   PARALLAX BANNER — Cinematic Refinement
+   ============================================ */
+.parallax-banner {
+  position: relative;
+}
+.parallax-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(43,16,46,0.55) 0%,
+    rgba(34,24,23,0.35) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+.parallax-content {
+  position: relative;
+  z-index: 2 !important;
+}
+.parallax-content h2 {
+  text-shadow: 0 4px 30px rgba(0,0,0,0.5);
+}
+.parallax-content p {
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+
+/* ============================================
+   EVENTS SECTION — Image (5): Gold Stage
+   ============================================ */
+#events {
+  position: relative;
+  background: #1a0b09 !important;
+  overflow: hidden;
+}
+#events::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_40_04 PM (5).webp');
+  background-size: cover;
+  background-position: center 40%;
+  opacity: 0.09;
+  z-index: 0;
+  pointer-events: none;
+}
+#events .events-wrap,
+#events .events-header,
+#events .event-cards {
+  position: relative;
+  z-index: 1;
+}
+.event-card {
+  background: rgba(255,255,255,0.025) !important;
+  border: 1px solid rgba(216,184,120,0.13) !important;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+  transition: all 0.5s ease !important;
+}
+.event-card:hover {
+  box-shadow: 0 24px 64px rgba(0,0,0,0.55), 0 0 0 1px rgba(216,184,120,0.28) !important;
+  transform: translateY(-6px);
+}
+
+/* ============================================
+   GALLERY SECTION (index.html)
+   ============================================ */
+#gallery {
+  position: relative;
+  background: linear-gradient(180deg, #0e0510 0%, #1a091c 40%, #0e0510 100%) !important;
+  overflow: hidden;
+}
+#gallery::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_39_56 PM (1).webp');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.05;
+  z-index: 0;
+  pointer-events: none;
+}
+#gallery .gallery-header,
+#gallery .masonry-grid {
+  position: relative;
+  z-index: 1;
+}
+.masonry-item {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: box-shadow 0.5s ease;
+}
+.masonry-item:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+
+/* ============================================
+   INVEST SECTION — Image (5): Stage/Authority
+   ============================================ */
+#invest {
+  position: relative;
+  overflow: hidden;
+}
+#invest::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_40_04 PM (5).webp');
+  background-size: cover;
+  background-position: center top;
+  opacity: 0.07;
+  z-index: 0;
+  pointer-events: none;
+}
+#invest .invest-grid {
+  position: relative;
+  z-index: 1;
+}
+.invest-tier {
+  background: rgba(255,255,255,0.02) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: all 0.4s ease !important;
+}
+.invest-tier:hover {
+  background: rgba(216,184,120,0.06) !important;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35) !important;
+}
+.invest-tier.featured {
+  box-shadow: 0 8px 40px rgba(216,184,120,0.12) !important;
+}
+
+/* ============================================
+   TESTIMONIALS — Image (9): Elegant Quote BG
+   ============================================ */
+#testimonials {
+  position: relative;
+  background: #1a1009 !important;
+  overflow: hidden;
+}
+#testimonials::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_40_17 PM (9).webp');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.14;
+  z-index: 0;
+  pointer-events: none;
+}
+#testimonials::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(26,16,9,0.6) 0%,
+    rgba(26,16,9,0.3) 50%,
+    rgba(26,16,9,0.6) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+#testimonials .testimonials-wrap {
+  position: relative;
+  z-index: 1;
+}
+.testimonial-quote::before {
+  color: rgba(216,184,120,0.18) !important;
+  font-size: 150px !important;
+}
+.t-arrow:hover {
+  box-shadow: 0 4px 20px rgba(216,184,120,0.25) !important;
+}
+
+/* ============================================
+   CONTACT SECTION (index.html) — Image (10)
+   ============================================ */
+#contact {
+  position: relative;
+  background: #120a07 !important;
+  overflow: hidden;
+}
+#contact::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_40_18 PM (10).webp');
+  background-size: cover;
+  background-position: right center;
+  opacity: 0.16;
+  z-index: 0;
+  pointer-events: none;
+}
+#contact .contact-grid {
+  position: relative;
+  z-index: 1;
+}
+.contact-icon {
+  background: rgba(216,184,120,0.04) !important;
+}
+.contact-item:hover .contact-icon {
+  box-shadow: 0 4px 20px rgba(216,184,120,0.25) !important;
+}
+.social-link:hover {
+  background: rgba(216,184,120,0.08) !important;
+  box-shadow: 0 4px 20px rgba(216,184,120,0.18) !important;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  box-shadow: 0 0 0 1px rgba(216,184,120,0.25), 0 4px 20px rgba(216,184,120,0.08) !important;
+}
+
+/* ============================================
+   FOOTER — Premium Dark Branded
+   ============================================ */
+footer {
+  background: #0f0806 !important;
+  border-top: 1px solid rgba(216,184,120,0.2) !important;
+  position: relative;
+  overflow: hidden;
+}
+footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_39_56 PM (1).webp');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.04;
+  z-index: 0;
+  pointer-events: none;
+}
+footer .footer-inner {
+  position: relative;
+  z-index: 1;
+}
+.footer-logo img {
+  filter: drop-shadow(0 0 12px rgba(216,184,120,0.3));
+}
+.footer-tagline {
+  color: rgba(216,184,120,0.55) !important;
+  letter-spacing: 0.03em;
+}
+.footer-links a:hover {
+  color: var(--gold-light) !important;
+}
+.footer-copy {
+  opacity: 0.6;
+}
+
+/* ============================================
+   PROGRESS BAR
+   ============================================ */
+.progress-bar {
+  background: linear-gradient(to right, #C8A45A, #D8B878, #A77A8A) !important;
+  box-shadow: 0 0 12px rgba(216,184,120,0.4);
+}
+
+/* ============================================
+   SHOP PAGE
+   ============================================ */
+#shop {
+  position: relative;
+  overflow: hidden;
+}
+#shop .shop-wrap {
+  position: relative;
+  z-index: 1;
+}
+.product-card {
+  transition: transform 0.5s ease, box-shadow 0.5s ease !important;
+}
+.product-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(216,184,120,0.18) !important;
+}
+.product-img-wrap {
+  border: 1px solid rgba(216,184,120,0.07) !important;
+}
+.product-name {
+  line-height: 1.4 !important;
+  letter-spacing: 0.02em;
+}
+.product-buttons a {
+  letter-spacing: 0.24em !important;
+  transition: all 0.35s ease !important;
+}
+.product-buttons a:hover {
+  background: var(--gold) !important;
+  color: var(--espresso) !important;
+  box-shadow: 0 4px 20px rgba(216,184,120,0.28);
+}
+.product-badge {
+  letter-spacing: 0.28em;
+  font-size: 8px !important;
+}
+
+/* ============================================
+   GALLERY PAGE — Image (7): Stories in Motion
+   ============================================ */
+.gallery-page-hero {
+  position: relative;
+  height: 480px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_40_10 PM (7).webp');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.gallery-page-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(26,9,28,0.65) 0%,
+    rgba(34,24,23,0.4) 50%,
+    rgba(20,11,8,0.92) 100%
+  );
+  z-index: 1;
+}
+.gallery-page-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+}
+.gallery-page-hero-content .section-label {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.gallery-page-hero-content h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(36px, 6vw, 80px);
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  text-shadow: 0 4px 40px rgba(0,0,0,0.6);
+}
+.gallery-page-hero-content h1 em {
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--gold);
+}
+.gallery-page-hero-content p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(16px, 2vw, 24px);
+  font-style: italic;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.04em;
+}
+
+/* Gallery page body background */
+#gallery {
+  position: relative;
+}
+#gallery::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_40_15 PM (8).webp');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.04;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ============================================
+   CONTACT PAGE — Image (10): Warm Desk
+   ============================================ */
+body.contact-page #contact::before {
+  opacity: 0.22 !important;
+  background-position: center right !important;
+}
+
+/* ============================================
+   QUOTE/FEARLESS BANNER — Image (6)
+   ============================================ */
+.fearless-banner {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fearless-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_40_06 PM (6).webp');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.fearless-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(20,11,8,0.35);
+  z-index: 1;
+}
+.fearless-banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* ============================================
+   TRANSFORMATION BANNER — Image (4): Chains
+   ============================================ */
+.transformation-banner {
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.transformation-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_40_00 PM (4).webp');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.transformation-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+    rgba(20,11,8,0.9) 0%,
+    rgba(20,11,8,0.6) 50%,
+    rgba(20,11,8,0.2) 100%);
+  z-index: 1;
+}
+.transformation-banner-content {
+  position: relative;
+  z-index: 2;
+  padding: 80px 60px;
+  max-width: 600px;
+}
+
+/* ============================================
+   LOGO SECTION REFINEMENT
+   ============================================ */
+.logo-section {
+  position: relative;
+  overflow: hidden;
+}
+.logo-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('backgrounds/ChatGPT Image Jun 3, 2026, 05_39_56 PM (1).webp');
+  background-size: cover;
+  opacity: 0.06;
+  z-index: 0;
+}
+.logo-section .logo-inner {
+  position: relative;
+  z-index: 1;
+}
+.brand-logo-img {
+  box-shadow: 0 0 0 1px rgba(216,184,120,0.3), 0 8px 40px rgba(0,0,0,0.5);
+}
+
+/* ============================================
+   COUNTDOWN REFINEMENT
+   ============================================ */
+.count-num {
+  text-shadow: 0 0 30px rgba(216,184,120,0.25);
+}
+
+/* ============================================
+   AUTH MODAL PREMIUM
+   ============================================ */
+.auth-modal {
+  box-shadow: 0 30px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(216,184,120,0.15) !important;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .gallery-page-hero { height: 300px; }
+  .fearless-banner { height: 280px; }
+  .transformation-banner { min-height: 280px; }
+  .transformation-banner-content { padding: 60px 24px; }
+  footer { text-align: center; }
+}
+@media (max-width: 480px) {
+  .gallery-page-hero { height: 240px; }
+}
